@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 // Book class
 class Book {
-    private String title;
-    private String author;
-    private int publicationYear;
+    private final String title;
+    private final String author;
+    private final int publicationYear;
     private boolean isAvailable;
 
     // Constructor
@@ -44,9 +44,9 @@ class Book {
 
 // Member class
 class Member {
-    private String name;
-    private String id;
-    private ArrayList<Book> borrowedBooks;
+    private final String name;
+    private final String id;
+    private final ArrayList<Book> borrowedBooks;
 
     // Constructor
     public Member(String name, String id) {
@@ -96,8 +96,8 @@ class Member {
 
 // Library class
 class Library {
-    private ArrayList<Book> books;
-    private ArrayList<Member> members;
+    private final ArrayList<Book> books;
+    private final ArrayList<Member> members;
 
     // Constructor
     public Library() {
